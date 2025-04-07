@@ -1,0 +1,6 @@
+import{c as a,j as e,a as s,G as t,I as n}from"./index-CU9xnzVS.js";/**
+ * @license lucide-react v0.487.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const i=[["rect",{width:"20",height:"16",x:"2",y:"4",rx:"2",key:"18n3k1"}],["path",{d:"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7",key:"1ocrg3"}]],r=a("mail",i);function l(){return e.jsxs("section",{className:"p-10 max-w-3xl mx-auto",children:[e.jsx("h2",{className:"text-3xl font-bold mb-4",children:"Contato"}),e.jsx("p",{className:"mb-2",children:"Para colaborações ou consultas, envie um e-mail para:"}),e.jsxs("a",{href:"mailto:contato@martins.dev",className:"flex items-center gap-2 text-blue-600 underline",children:[e.jsx(r,{size:18})," contato@martins.dev"]}),e.jsxs("div",{className:"mt-4 flex space-x-6",children:[e.jsxs("a",{href:"https://linkedin.com/in/martins",target:"_blank",className:"flex items-center gap-1 hover:underline",children:[e.jsx(s,{size:18})," LinkedIn"]}),e.jsxs("a",{href:"https://github.com/martins",target:"_blank",className:"flex items-center gap-1 hover:underline",children:[e.jsx(t,{size:18})," GitHub"]}),e.jsxs("a",{href:"https://instagram.com/martins",target:"_blank",className:"flex items-center gap-1 hover:underline",children:[e.jsx(n,{size:18})," Instagram"]})]})]})}export{l as default};
