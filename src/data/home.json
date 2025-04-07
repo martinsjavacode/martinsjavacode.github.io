@@ -1,0 +1,20 @@
+{
+  "articles": {
+    "image": "/images/laptops.jpg",
+    "links": [
+      {
+        "display": "Medium",
+        "to": "https://martinsjavacode.medium.com"
+      }
+    ]
+  },
+  "projects": {
+    "image": "/images/laptops.jpg",
+    "links": [
+      {
+        "display": "View details",
+        "to": "/projects"
+      }
+    ]
+  }
+}

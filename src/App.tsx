@@ -1,29 +1,27 @@
-import {BrowserRouter as Router, Link, Route, Routes} from 'react-router'
+import { Suspense, lazy } from 'react';
+import { Routes, Route } from 'react-router'
+import Layout from './components/Layout'
+
 import './App.css'
-import Home from "./pages/home.tsx";
-import About from "./pages/about.tsx";
-import Projects from "./pages/projects.tsx";
-import Contact from "./pages/contact.tsx";
+
+const Home = lazy(() => import('./pages/Home'));
+const About = lazy(() => import('./pages/About'));
+const Projects = lazy(() => import('./pages/Projects.tsx'));
+const Contact = lazy(() => import('./pages/Contact'));
 
 function App() {
-  return (
-    <Router>
-        <div className="container">
-            <nav>
-                <Link to={"/"}>Home</Link>
-                <Link to={"/about"}>About</Link>
-                <Link to={"/projects"}>Projects</Link>
-                <Link to={"/contact"}>Contact</Link>
-            </nav>
-            <Routes>
-                <Route path="/" element={<Home />}/>
-                <Route path="/about" element={<About />}/>
-                <Route path="/projects" element={<Projects />}/>
-                <Route path="/contact" element={<Contact />}/>
-            </Routes>
-        </div>
-    </Router>
-  )
+    return (
+        <Layout>
+            <Suspense fallback={<div className="text-center p-10">Carregando...</div>}>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/projects" element={<Projects />} />
+                    <Route path="/contact" element={<Contact />} />
+                </Routes>
+            </Suspense>
+        </Layout>
+    )
 }
 
 export default App
