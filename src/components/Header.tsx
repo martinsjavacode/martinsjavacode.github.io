@@ -10,7 +10,7 @@ export default function Header() {
 
     return (
         <header className="bg-white w-full top-0 z-10">
-            <div className="max-w-6xl mx-auto py-5 flex items-center justify-between">
+            <div className="max-w-380 mx-auto py-5 flex items-center justify-between">
                 <Link to="/" className="w-80">
                     <img src={Logo} alt="Martins Java Code Logo" />
                 </Link>

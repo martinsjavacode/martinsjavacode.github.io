@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <>
             <div className="px-40 pb-20">
-                <section className="relative h-screen bg-cover bg-center bg-[url(/images/laptops.jpg)]">
+                <section className="relative h-186 bg-cover bg-center bg-[url(/images/laptops.jpg)]">
                     <div className="absolute inset-0 bg-blue-tech/40" />
                     <div className="absolute bottom-20 left-20 text-left text-white max-w-[50%] px-4">
                         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-lg">
